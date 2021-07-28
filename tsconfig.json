@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["components/*"]
+    },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
@@ -11,10 +15,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "preserve",
+    "strictNullChecks": false
   },
-  "paths": {
-    "@/components/*": ["components/*"]
-  },
-  "include": ["src"]
+  // "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules"]
 }

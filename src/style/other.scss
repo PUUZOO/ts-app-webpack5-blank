@@ -1,0 +1,149 @@
+// =============================================================================
+// Font Size Helper
+// =============================================================================
+@function rem($size) {
+  @return $size / $font-size-base-px + 0rem;
+}
+
+@function em($size, $baseSize: $font-size-base-px) {
+  @return #{$size/$baseSize}em;
+}
+
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: rem(1px * $i) !important;
+  }
+}
+
+// Custom Bootstrap Grid
+@include media-breakpoint-between(xl, xxl) {
+  .container {
+    padding-left: rem(84px);
+    padding-right: rem(84px);
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .container {
+    padding-left: rem(84px);
+    padding-right: rem(84px);
+  }
+  .gx-4 {
+    --bs-gutter-x: 1rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .container {
+    padding-left: rem(16px);
+    padding-right: rem(16px);
+  }
+}
+
+// GLOBAL
+h1 {
+  line-height: 60px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  @include media-breakpoint-down(xxl) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+  }
+}
+h2 {
+  line-height: 56px;
+  @include media-breakpoint-down(xxl) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+  }
+}
+
+.btn {
+  @include media-breakpoint-down(xxl) {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.btn-success {
+  color: white;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+.bg-black {
+  background: black;
+}
+.z-i--1 {
+  z-index: 0;
+}
+.z-i-0 {
+  z-index: 0;
+}
+.z-i-1 {
+  z-index: 1;
+}
+.z-i-2 {
+  z-index: 2;
+}
+.overflow-hiden {
+  overflow: hidden;
+}
+.overflow-hiden-y {
+  overflow-y: hidden;
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+.t {
+  top: 0;
+}
+.b {
+  bottom: 0;
+}
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.opacity-0 {
+  opacity: 0;
+}
+
+// GLOBAL
+:focus {
+  outline: none !important;
+}
+.btn {
+  cursor: pointer;
+}
+
+.green-800 {
+  color: #275535;
+}
+
+.purple-500 {
+  color: $purple-500;
+}
+
+.bg-green-50 {
+  background: #edf7ef;
+}
+
+.bg-green-200 {
+  background-color: $green-200;
+}
+
+.bg-red-200 {
+  background-color: $red-200;
+}
+
+.bg-purple-200 {
+  background-color: $purple-200;
+}

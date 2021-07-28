@@ -1,0 +1,63 @@
+$font-size-base-px: 16px;
+$font-size-base: 1rem !default;
+$spacer: 1rem;
+$border-radius: 0.5rem;
+
+$font-family-sans-serif: "SuisseIntl", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$body-color: #090a09;
+
+$h1-font-size: $font-size-base * 3.75 !default;
+$h2-font-size: $font-size-base * 3 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+// size - 24px
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.75,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 2.5,
+  6: $spacer * 3,
+  7: $spacer * 5,
+  8: $spacer * 7.5,
+) !default;
+
+$grid-gutter-width: 2rem;
+$gutters: $spacers !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 640px,
+  xxl: 1200px,
+);
+
+$container-max-widths: (
+  sm: 608px,
+  md: 777px,
+  lg: 1032px,
+  xl: 1420px,
+);
+
+// Color
+$green: #43925a;
+
+$light: #f7f6f4;
+$dark: #090a09;
+$secondary: #efedea;
+
+// Shadow
+$box-shadow: 0px 18px 28px rgba(9, 30, 66, 0.15), 0px 0px 1px rgba(9, 30, 66, 0.31);
+
+// BTN
+$btn-padding-y: 0.535rem;
+$btn-font-size: 0.875rem;
+$btn-font-weight: 600;
+$btn-border-radius: $spacer * 0.25;
